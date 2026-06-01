@@ -87,6 +87,16 @@ With support for Linux, Windows, and MacOS, we give you the tools to seamlessly 
 
 Decide how you want to save your credential vault, KeeWeb supports saving your database as a local file, or you can store your password vault with some of the most popular cloud services such as Dropbox, Google Drive, and Microsoft OneDrive.
 
+### passxdc fork notes
+
+This repository is now focused on **webxdc-only distribution**.
+
+- Build an `.xdc` package with `npm run build`
+- Run browser development with a mocked `window.webxdc` API using `npm run webxdc:dev`
+- Run browser development plus desktop emulator using `npm run webxdc:emulator`
+
+Cloud storage integrations (Dropbox, Google Drive, OneDrive, WebDAV, Teams) are disabled for offline-first webxdc usage.
+
 <br />
 
 ### Quick Links

@@ -546,7 +546,7 @@ class SettingsFileView extends View {
                 backup.storage = 'file';
                 backup.path = Launcher.getDocumentsPath(defaultPath);
             } else {
-                backup.storage = 'dropbox';
+                backup.storage = 'file';
                 backup.path = defaultPath;
             }
             // } else if (this.model.storage === 'webdav') {

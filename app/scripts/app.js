@@ -179,13 +179,18 @@ ready(() => {
     }
 
     function postInit() {
+        const isWebxdc = typeof window.webxdc !== 'undefined';
         setTimeout(() => {
-            Updater.init();
+            if (!isWebxdc) {
+                Updater.init();
+            }
             SingleInstanceChecker.init();
             AppRightsChecker.init();
             IdleTracker.init();
-            BrowserExtensionConnector.init(appModel);
-            PluginManager.runAutoUpdate();
+            if (!isWebxdc) {
+                BrowserExtensionConnector.init(appModel);
+                PluginManager.runAutoUpdate();
+            }
         }, Timeouts.AutoUpdatePluginsAfterStart);
     }
 

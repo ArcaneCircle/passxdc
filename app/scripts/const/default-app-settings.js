@@ -68,24 +68,24 @@ const DefaultAppSettings = {
     canExportXml: true, // can export files as XML
     canExportHtml: true, // can export files as HTML
     canSaveTo: true, // can save existing files to filesystem
-    canOpenStorage: true, // can open files from cloud storage providers
+    canOpenStorage: false, // can open files from cloud storage providers
     canOpenGenerator: true, // can open password generator
     canOpenOtpDevice: true, // can open OTP codes from USB tokens
 
-    dropbox: true, // enable Dropbox integration
+    dropbox: false, // enable Dropbox integration
     dropboxFolder: null, // default folder path
     dropboxAppKey: null, // custom Dropbox app key
     dropboxSecret: null, // custom Dropbox app secret
 
-    webdav: true, // enable WebDAV integration
+    webdav: false, // enable WebDAV integration
     webdavSaveMethod: 'move', // how to save files with WebDAV: "move" or "put"
     webdavStatReload: false, // WebDAV: reload the file instead of relying on Last-Modified
 
-    gdrive: true, // enable Google Drive integration
+    gdrive: false, // enable Google Drive integration
     gdriveClientId: null, // custom Google Drive client id
     gdriveClientSecret: null, // custom Google Drive client secret
 
-    onedrive: true, // enable OneDrive integration
+    onedrive: false, // enable OneDrive integration
     onedriveClientId: null, // custom OneDrive client id
     onedriveClientSecret: null, // custom OneDrive client secret
     onedriveTenantId: null, // custom OneDrive tenant id
